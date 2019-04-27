@@ -1,0 +1,84 @@
+header {
+	border-radius: 15px 15px 0 0;
+	height: 110px;
+	padding-left: 10px;
+	background-color: #691313;
+	animation: slide 1s;
+	margin:20px;
+}
+
+#PagIni {
+	background-color: white;
+	border-radius: 30px;
+	background-color: black;
+}
+
+body {
+	font-family: Calibri;
+	background.color:#02010a;
+	}
+
+#contenedor {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-family: Calibri;
+	margin: 3% 3% 5% 0;
+	padding-top:20px;
+	height:10px;
+	text-align:center;
+	text-shadow: 2px 3px 3px #02010a;
+	font-size:300%;
+}
+
+#titulo2 {
+   background:#FFFFFF;
+   height: 500px;
+   margin: -1% 0 3% -0.8%;
+}
+
+h2 {
+	color: #691313;
+	font-family: Calibri;
+	font-size:220%;
+	padding-top: -60px;
+	padding-left:20px;
+	height: 40px;
+	margin: -1% 0% 3% -0.8%;
+}
+
+p {
+	color: #02010a;
+	font-family: Calibri;
+	font-size:100%;
+	padding-left:20px;
+	height: 40px;
+	margin:-2% 7% 3% -0.8%;
+}	
+
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #691313;
+	padding: 15px 0;
+	color: black;
+	border-radius: 0 0 10px 10px;
+	height:100px;
+	margin:30% 5% 3% 1.5%;
+	width:97%;
+}
+
+footer .columna {
+	width: 20%;
+	box-sizing: border-box;
+	padding: 0 15px;
+	color: black;
+	font-family: Calibri;
+	font-size: 15px;
+	margin: -1% 1% -1% 1%;
+	align-content: center;
+}
