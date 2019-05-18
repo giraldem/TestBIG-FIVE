@@ -7,7 +7,7 @@
 	<title>Test "BIG FIVE"</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="js/preguntas.js">
+	<script src="js/preguntas"></script>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet">
 </head>
@@ -16,6 +16,8 @@
 	<div id="contenedor">
 		<div id="pregunta"></div>
 	    <div id="respuestas"></div>
+
+	<input type="button" value="" onclick="comprobar">
 			<script>
 		    	var preguntas =  [ 
 		    		"1.Creo que soy una persona activa y vigorosa."
@@ -27,7 +29,12 @@
 		    	];
 
 		    	var respuestas = [
-		    	    ["5", "4", "3", "2", "1"]
+		    	    ["5", "4", "3", "2", "1"],
+		    	    ["5", "4", "3", "2", "1"],
+		    	    ["5", "4", "3", "2", "1"],
+		    	    ["5", "4", "3", "2", "1"],
+		    	    ["5", "4", "3", "2", "1"],
+		    	    ["5", "4", "3", "2", "1"],
 		    	];
 
 		    	var indice_aleatorio= Math.floor (Math.random()*preguntas.length);
@@ -39,8 +46,13 @@
 
 		    	document.getElementById("respuestas").innerHTML= txt_respuestas;
 		    	document.getElementById("pregunta").ineerHTML = preguntas[indice_aleatorio];
+		    function comprobar(){
+		    	var respuesta =$ ("input[type=radio]:checked").val();
+		    	alert(respuesta)
+		    }
+
 			</script>
-			
+
 			<header>
 				<div id="titulo">
 					<h1>Test "BIG FIVE"</h1><br>

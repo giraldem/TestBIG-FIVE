@@ -1,4 +1,3 @@
-script{ 
     	var preguntas =  [ 
     		"1.Creo que soy una persona activa y vigorosa."
     		"2.No me gusta hacer las cosas razonando demasiado sobre ellas."
@@ -48,4 +47,4 @@ script{
     	var indice_aleatorio= Math.floor (Math.random()*preguntas.length);
 
     	alert(preguntas[indice_aleatorio]);
-   }
+   
