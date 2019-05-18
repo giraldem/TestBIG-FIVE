@@ -51,6 +51,20 @@ h2 {
 	margin: -1% 0% 3% -0.8%;
 }
 
+h3 {
+	color:white;
+	font-size:100%;
+}
+
+h4{
+	font-size:100%;
+	text-align:left;
+	color: #691313;
+	margin: -1% 0% 3% 18%;
+}
+#columna {
+	color:white;
+	}
 p {
 	color: #02010a;
 	font-family: Calibri;
@@ -65,7 +79,7 @@ footer {
 	flex-flow: row wrap;
 	background-color: #691313;
 	padding: 15px 0;
-	color: black;
+	color: white;
 	border-radius: 0 0 10px 10px;
 	height:100px;
 	margin:30% 5% 3% 1.5%;
@@ -76,7 +90,6 @@ footer .columna {
 	width: 20%;
 	box-sizing: border-box;
 	padding: 0 15px;
-	color: black;
 	font-family: Calibri;
 	font-size: 15px;
 	margin: -1% 1% -1% 1%;

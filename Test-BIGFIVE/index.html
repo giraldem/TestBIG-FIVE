@@ -6,14 +6,41 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Test "BIG FIVE"</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/preguntas.js">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet">
-
 </head>
 
 <body id="PagIni">
 	<div id="contenedor">
+		<div id="pregunta"></div>
+	    <div id="respuestas"></div>
+			<script>
+		    	var preguntas =  [ 
+		    		"1.Creo que soy una persona activa y vigorosa."
+		    		"2.No me gusta hacer las cosas razonando demasiado sobre ellas."
+		    		"3.Tiendo a implicarme demasiado cuando alguien me cuenta sus problemas."
+		    		"4.No me preocupan especialmente las consecuencias que mis actos puedan tener sobre los demás."
+		    		"5.Estoy siempre informado sobre lo que sucede en el mundo."
+		    		"6.Nunca he dicho una mentira."
+		    	];
 
+		    	var respuestas = [
+		    	    ["5", "4", "3", "2", "1"]
+		    	];
+
+		    	var indice_aleatorio= Math.floor (Math.random()*preguntas.length);
+
+		    	var respuestas_posibles="";
+		    	for(i in respuestas_posibles){
+		    		txt_respuestas += '<input type="radio"><label>' + respuestas_posibles[i]+'</label>';
+		    	}
+
+		    	document.getElementById("respuestas").innerHTML= txt_respuestas;
+		    	document.getElementById("pregunta").ineerHTML = preguntas[indice_aleatorio];
+			</script>
+			
 			<header>
 				<div id="titulo">
 					<h1>Test "BIG FIVE"</h1><br>
@@ -21,13 +48,18 @@
 				<div id="titulo2">
 					<h2>Instrucciones</h2>
 					<div>
-					    <p>A continuación encontrará una serie de frases sobre formas de pensar, sentir o actuar, para que la vaya leyendo atentamente y marque la respuesta que describa mejor cuál es su forma habitual de pensar, sentir o actuar.<br>
-					    Para contestar tendrá un tiempo estimado de 15 segundos por cada frase.</p>
+					    <p>A continuación encontrará una serie de frases sobre formas de pensar, sentir o actuar, para que las vaya leyendo atentamente y marque la respuesta que describa mejor cuál es su forma habitual de pensar, sentir o actuar. Para contestar tendrá un tiempo estimado de 15 segundos por cada frase.<br>
+					    Las alternativas de respuesta son: 
+					    </p>
+					    <h4>5 completamente VERDADERO para mí<br>
+						    4 bastante VERDADERO para mí<br>
+						    3 ni VERDADERO ni FALSO para mí<br>
+						    2 bastante FALSO para mí<br>
+						    1 completamente FALSO para mí
+						</h4>
 				    </div>	
 				</div>
-				<div id="Pregunta1">
-					<h4>1.Creo que soy una persona activa y vigorosa.</h4>
-			    </div>
+
             </header>
     </div>
 
